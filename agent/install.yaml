@@ -38,5 +38,5 @@ spec:
               args:
                 - /bin/sh
                 - -c
-                - git clone https://github.com/sathish-kumar-narayanan/poor-mans-gitops.git && cat poor-mans-gitops/apps/my-app.yaml | kubectl apply -f -
+                - git clone https://github.com/sathish-kumar-narayanan/poor-mans-gitops.git && cat poor-mans-gitops/apps/my-app.yaml | kubectl apply -f - --validate=false
           restartPolicy: Never
