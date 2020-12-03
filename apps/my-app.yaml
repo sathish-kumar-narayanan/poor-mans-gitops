@@ -8,4 +8,4 @@ spec:
   containers:              # This spec has multiple containers, how fancy!
   - name: hello-world-sh
     image: busybox
-    command: ['sh', '-c', 'while true; do echo "Hello World"; sleep 2; done']
+    command: ['sh', '-c', 'while true; do echo "Hello World"; sleep 10; done']
