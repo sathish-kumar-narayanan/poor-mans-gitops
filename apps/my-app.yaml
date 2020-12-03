@@ -1,12 +1,11 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: my-app
-  namespace: default
-  labels:
-    apps.kubernetes.io/instance: my-app
+  name: hello-world-pod-2
+  labels:                  # You'll use labels A LOT w/ kube
+    app: hello-world       # They are useful for organizing and identifying attributes of an object
 spec:
-  containers:
-    - name: main
-      image: alexcollinsintuit/my-app:v1
-      imagePullPolicy: IfNotPresent
+  containers:              # This spec has multiple containers, how fancy!
+  - name: hello-world-sh
+    image: busybox
+    command: ['sh', '-c', 'while true; do echo "Hello World"; sleep 2; done']
