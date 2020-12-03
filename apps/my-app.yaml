@@ -8,4 +8,4 @@ spec:
   containers:              # This spec has multiple containers, how fancy!
   - name: hello-world-sh
     image: busybox
-    command: ['sh', '-c', 'echo Hello World! && sleep 3600']
+    command: ['sh', '-c', 'echo Hello World v2! && sleep 3600']
